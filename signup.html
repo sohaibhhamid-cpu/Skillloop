@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Skillloop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">🔄</span>
+                    <span class="logo-text">Skillloop</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="login.html" class="btn-secondary">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="auth-section">
+        <div class="auth-container">
+            <div class="auth-box">
+                <div class="auth-header">
+                    <h1>Join Skillloop</h1>
+                    <p>Start exchanging skills today</p>
+                </div>
+                <form id="signupForm" class="auth-form">
+                    <div class="form-group">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" id="fullname" name="fullname" required placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="your@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required placeholder="Create a strong password">
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="Confirm your password">
+                    </div>
+                    <div class="form-options">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="terms" required>
+                            <span>I agree to the Terms and Privacy Policy</span>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn-large btn-primary">Create Account</button>
+                </form>
+                <div class="auth-footer">
+                    <p>Already have an account? <a href="login.html" class="link">Login</a></p>
+                </div>
+            </div>
+            <div class="auth-visual">
+                <h2>Why Join Skillloop?</h2>
+                <ul class="benefits-list">
+                    <li>
+                        <span class="benefit-icon">✨</span>
+                        <div>
+                            <h3>Learn New Skills</h3>
+                            <p>Access knowledge from passionate teachers worldwide</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="benefit-icon">🤝</span>
+                        <div>
+                            <h3>Share Your Expertise</h3>
+                            <p>Help others grow while building meaningful connections</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="benefit-icon">🎯</span>
+                        <div>
+                            <h3>Perfect Matches</h3>
+                            <p>Our algorithm finds the best learning partners for you</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="benefit-icon">💰</span>
+                        <div>
+                            <h3>Completely Free</h3>
+                            <p>No subscriptions, no hidden fees. Just pure learning</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

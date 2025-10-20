@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Matches - Skillloop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">🔄</span>
+                    <span class="logo-text">Skillloop</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="matchmaking.html" class="active">Find Matches</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="messages.html">Messages</a></li>
+                    <li><a href="#" class="btn-secondary">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="matchmaking-section">
+        <div class="container">
+            <div class="section-header">
+                <h1>Find Your Perfect Match</h1>
+                <p>Connect with people who want to learn what you know and teach what you need</p>
+            </div>
+
+            <div class="search-filters">
+                <div class="filter-group">
+                    <label>Search by skill</label>
+                    <input type="text" id="searchSkill" placeholder="e.g., Guitar, Cooking, Programming...">
+                </div>
+                <div class="filter-group">
+                    <label>Match type</label>
+                    <select id="matchType">
+                        <option value="all">All Matches</option>
+                        <option value="perfect">Perfect Matches</option>
+                        <option value="partial">Partial Matches</option>
+                    </select>
+                </div>
+                <button class="btn-primary" id="searchBtn">Search</button>
+            </div>
+
+            <div class="matches-container">
+                <div class="match-card perfect-match">
+                    <div class="match-badge">⚡ Perfect Match</div>
+                    <div class="match-header">
+                        <div class="match-avatar">A</div>
+                        <div class="match-info">
+                            <h3>Alex Rodriguez</h3>
+                            <p class="match-location">📍 New York, USA</p>
+                        </div>
+                        <div class="match-score">
+                            <span class="score-number">95%</span>
+                            <span class="score-label">Match</span>
+                        </div>
+                    </div>
+                    <div class="match-content">
+                        <p class="match-bio">Passionate musician and teacher. Love sharing my knowledge of guitar and learning new things!</p>
+                        <div class="match-skills">
+                            <div class="skill-exchange">
+                                <div class="skill-column">
+                                    <h4>They Teach</h4>
+                                    <div class="skill-tag teach">🎸 Guitar</div>
+                                    <div class="skill-tag teach">🎹 Piano</div>
+                                </div>
+                                <div class="exchange-arrow">⇄</div>
+                                <div class="skill-column">
+                                    <h4>They Want</h4>
+                                    <div class="skill-tag learn">🎤 Singing</div>
+                                    <div class="skill-tag learn">🎵 Music Theory</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="match-actions">
+                        <button class="btn-primary btn-connect">Connect</button>
+                        <button class="btn-secondary">View Profile</button>
+                    </div>
+                </div>
+
+                <div class="match-card">
+                    <div class="match-header">
+                        <div class="match-avatar">S</div>
+                        <div class="match-info">
+                            <h3>Sarah Chen</h3>
+                            <p class="match-location">📍 San Francisco, USA</p>
+                        </div>
+                        <div class="match-score">
+                            <span class="score-number">88%</span>
+                            <span class="score-label">Match</span>
+                        </div>
+                    </div>
+                    <div class="match-content">
+                        <p class="match-bio">UX designer by day, coding enthusiast by night. Always excited to learn and share!</p>
+                        <div class="match-skills">
+                            <div class="skill-exchange">
+                                <div class="skill-column">
+                                    <h4>They Teach</h4>
+                                    <div class="skill-tag teach">🎨 UI/UX Design</div>
+                                    <div class="skill-tag teach">📱 Figma</div>
+                                </div>
+                                <div class="exchange-arrow">⇄</div>
+                                <div class="skill-column">
+                                    <h4>They Want</h4>
+                                    <div class="skill-tag learn">💻 Web Development</div>
+                                    <div class="skill-tag learn">⚛️ React</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="match-actions">
+                        <button class="btn-primary btn-connect">Connect</button>
+                        <button class="btn-secondary">View Profile</button>
+                    </div>
+                </div>
+
+                <div class="match-card">
+                    <div class="match-header">
+                        <div class="match-avatar">M</div>
+                        <div class="match-info">
+                            <h3>Marcus Johnson</h3>
+                            <p class="match-location">📍 London, UK</p>
+                        </div>
+                        <div class="match-score">
+                            <span class="score-number">82%</span>
+                            <span class="score-label">Match</span>
+                        </div>
+                    </div>
+                    <div class="match-content">
+                        <p class="match-bio">Professional chef looking to expand my creative horizons through photography and cooking exchanges.</p>
+                        <div class="match-skills">
+                            <div class="skill-exchange">
+                                <div class="skill-column">
+                                    <h4>They Teach</h4>
+                                    <div class="skill-tag teach">🍳 Cooking</div>
+                                    <div class="skill-tag teach">🍰 Baking</div>
+                                </div>
+                                <div class="exchange-arrow">⇄</div>
+                                <div class="skill-column">
+                                    <h4>They Want</h4>
+                                    <div class="skill-tag learn">📸 Photography</div>
+                                    <div class="skill-tag learn">🎬 Video Editing</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="match-actions">
+                        <button class="btn-primary btn-connect">Connect</button>
+                        <button class="btn-secondary">View Profile</button>
+                    </div>
+                </div>
+
+                <div class="match-card perfect-match">
+                    <div class="match-badge">⚡ Perfect Match</div>
+                    <div class="match-header">
+                        <div class="match-avatar">L</div>
+                        <div class="match-info">
+                            <h3>Lisa Wang</h3>
+                            <p class="match-location">📍 Toronto, Canada</p>
+                        </div>
+                        <div class="match-score">
+                            <span class="score-number">93%</span>
+                            <span class="score-label">Match</span>
+                        </div>
+                    </div>
+                    <div class="match-content">
+                        <p class="match-bio">Language lover and digital artist. Let's exchange skills and create something amazing!</p>
+                        <div class="match-skills">
+                            <div class="skill-exchange">
+                                <div class="skill-column">
+                                    <h4>They Teach</h4>
+                                    <div class="skill-tag teach">🇨🇳 Mandarin</div>
+                                    <div class="skill-tag teach">🎨 Digital Art</div>
+                                </div>
+                                <div class="exchange-arrow">⇄</div>
+                                <div class="skill-column">
+                                    <h4>They Want</h4>
+                                    <div class="skill-tag learn">🇪🇸 Spanish</div>
+                                    <div class="skill-tag learn">✍️ Creative Writing</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="match-actions">
+                        <button class="btn-primary btn-connect">Connect</button>
+                        <button class="btn-secondary">View Profile</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 Skillloop. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

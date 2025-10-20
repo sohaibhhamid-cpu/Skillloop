@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages - Skillloop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">🔄</span>
+                    <span class="logo-text">Skillloop</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="matchmaking.html">Find Matches</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="messages.html" class="active">Messages</a></li>
+                    <li><a href="#" class="btn-secondary">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="messages-section">
+        <div class="messages-container">
+            <div class="conversations-panel">
+                <div class="panel-header">
+                    <h2>Messages</h2>
+                    <button class="btn-icon" title="New message">✏️</button>
+                </div>
+                <div class="search-box">
+                    <input type="text" placeholder="Search conversations..." id="searchConversations">
+                </div>
+                <div class="conversations-list">
+                    <div class="conversation-item active" data-user="Alex Rodriguez">
+                        <div class="conversation-avatar">A</div>
+                        <div class="conversation-info">
+                            <div class="conversation-header">
+                                <h4>Alex Rodriguez</h4>
+                                <span class="conversation-time">2m ago</span>
+                            </div>
+                            <p class="conversation-preview">That sounds great! When would you...</p>
+                            <span class="unread-badge">2</span>
+                        </div>
+                    </div>
+                    <div class="conversation-item" data-user="Sarah Chen">
+                        <div class="conversation-avatar">S</div>
+                        <div class="conversation-info">
+                            <div class="conversation-header">
+                                <h4>Sarah Chen</h4>
+                                <span class="conversation-time">1h ago</span>
+                            </div>
+                            <p class="conversation-preview">Thanks for the design tips!</p>
+                        </div>
+                    </div>
+                    <div class="conversation-item" data-user="Marcus Johnson">
+                        <div class="conversation-avatar">M</div>
+                        <div class="conversation-info">
+                            <div class="conversation-header">
+                                <h4>Marcus Johnson</h4>
+                                <span class="conversation-time">3h ago</span>
+                            </div>
+                            <p class="conversation-preview">The recipe you shared was amazing!</p>
+                        </div>
+                    </div>
+                    <div class="conversation-item" data-user="Lisa Wang">
+                        <div class="conversation-avatar">L</div>
+                        <div class="conversation-info">
+                            <div class="conversation-header">
+                                <h4>Lisa Wang</h4>
+                                <span class="conversation-time">Yesterday</span>
+                            </div>
+                            <p class="conversation-preview">I'd love to start our language exchange</p>
+                        </div>
+                    </div>
+                    <div class="conversation-item" data-user="David Kim">
+                        <div class="conversation-avatar">D</div>
+                        <div class="conversation-info">
+                            <div class="conversation-header">
+                                <h4>David Kim</h4>
+                                <span class="conversation-time">2 days ago</span>
+                            </div>
+                            <p class="conversation-preview">See you in the next session!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-panel">
+                <div class="chat-header">
+                    <div class="chat-user-info">
+                        <div class="chat-avatar">A</div>
+                        <div>
+                            <h3>Alex Rodriguez</h3>
+                            <p class="user-status">🟢 Online</p>
+                        </div>
+                    </div>
+                    <div class="chat-actions">
+                        <button class="btn-icon" title="View profile">👤</button>
+                        <button class="btn-icon" title="More options">⋮</button>
+                    </div>
+                </div>
+
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message-date">Today</div>
+                    
+                    <div class="message received">
+                        <div class="message-avatar">A</div>
+                        <div class="message-content">
+                            <p>Hey! I saw your profile and I'm really interested in learning singing from you!</p>
+                            <span class="message-time">10:30 AM</span>
+                        </div>
+                    </div>
+
+                    <div class="message sent">
+                        <div class="message-content">
+                            <p>Hi Alex! That's awesome! I'd love to teach you singing, and I'm super excited to learn guitar from you 🎸</p>
+                            <span class="message-time">10:32 AM</span>
+                        </div>
+                    </div>
+
+                    <div class="message received">
+                        <div class="message-avatar">A</div>
+                        <div class="message-content">
+                            <p>Perfect match! 😊 How about we set up a schedule? Maybe twice a week?</p>
+                            <span class="message-time">10:35 AM</span>
+                        </div>
+                    </div>
+
+                    <div class="message sent">
+                        <div class="message-content">
+                            <p>Twice a week sounds perfect! I'm free on Tuesdays and Thursdays after 6 PM.</p>
+                            <span class="message-time">10:40 AM</span>
+                        </div>
+                    </div>
+
+                    <div class="message received">
+                        <div class="message-avatar">A</div>
+                        <div class="message-content">
+                            <p>That works for me! Should we start this Tuesday?</p>
+                            <span class="message-time">11:15 AM</span>
+                        </div>
+                    </div>
+
+                    <div class="message sent">
+                        <div class="message-content">
+                            <p>Yes! Let's do it 🎉</p>
+                            <span class="message-time">11:16 AM</span>
+                        </div>
+                    </div>
+
+                    <div class="message received">
+                        <div class="message-avatar">A</div>
+                        <div class="message-content">
+                            <p>That sounds great! When would you like to have our first session?</p>
+                            <span class="message-time">Just now</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chat-input">
+                    <button class="btn-icon" title="Attach file">📎</button>
+                    <input type="text" id="messageInput" placeholder="Type your message...">
+                    <button class="btn-icon" title="Send emoji">😊</button>
+                    <button class="btn-primary" id="sendMessageBtn">Send</button>
+                </div>
+            </div>
+
+            <div class="info-panel">
+                <div class="info-avatar">A</div>
+                <h3>Alex Rodriguez</h3>
+                <p class="info-location">📍 New York, USA</p>
+                
+                <div class="info-section">
+                    <h4>Exchange Details</h4>
+                    <div class="exchange-info">
+                        <div class="exchange-item">
+                            <span class="exchange-label">They teach you:</span>
+                            <span class="skill-tag teach">🎸 Guitar</span>
+                        </div>
+                        <div class="exchange-item">
+                            <span class="exchange-label">You teach them:</span>
+                            <span class="skill-tag learn">🎤 Singing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-section">
+                    <h4>Shared Interests</h4>
+                    <div class="interest-tags">
+                        <span class="interest-tag">🎵 Music</span>
+                        <span class="interest-tag">🎭 Performance</span>
+                        <span class="interest-tag">🎨 Creative Arts</span>
+                    </div>
+                </div>
+
+                <div class="info-section">
+                    <h4>Quick Actions</h4>
+                    <button class="btn-secondary btn-full">View Full Profile</button>
+                    <button class="btn-secondary btn-full">Schedule Session</button>
+                    <button class="btn-secondary btn-full">Share Resources</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

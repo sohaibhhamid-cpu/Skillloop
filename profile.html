@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - Skillloop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">🔄</span>
+                    <span class="logo-text">Skillloop</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="matchmaking.html">Find Matches</a></li>
+                    <li><a href="profile.html" class="active">Profile</a></li>
+                    <li><a href="messages.html">Messages</a></li>
+                    <li><a href="#" id="logoutBtn" class="btn-secondary">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="profile-section">
+        <div class="container">
+            <div class="profile-header">
+                <div class="profile-avatar-large">
+                    <span id="profileInitial">J</span>
+                </div>
+                <div class="profile-info">
+                    <h1 id="profileName">John Doe</h1>
+                    <p id="profileEmail">john@example.com</p>
+                    <p class="profile-joined">Member since October 2025</p>
+                </div>
+                <button class="btn-primary" id="editProfileBtn">Edit Profile</button>
+            </div>
+
+            <div class="profile-content">
+                <div class="profile-main">
+                    <div class="profile-card">
+                        <div class="card-header">
+                            <h2>About Me</h2>
+                            <button class="btn-icon" id="editAboutBtn">✏️</button>
+                        </div>
+                        <div class="card-content">
+                            <p id="aboutText">Welcome to my profile! I'm passionate about learning and sharing knowledge. Let's grow together!</p>
+                            <form id="aboutForm" class="edit-form" style="display: none;">
+                                <textarea id="aboutInput" rows="4" placeholder="Tell others about yourself..."></textarea>
+                                <div class="form-actions">
+                                    <button type="submit" class="btn-primary">Save</button>
+                                    <button type="button" class="btn-secondary" id="cancelAboutBtn">Cancel</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="profile-card">
+                        <div class="card-header">
+                            <h2>Skills I Can Teach</h2>
+                            <button class="btn-icon" id="addTeachSkillBtn">➕</button>
+                        </div>
+                        <div class="card-content">
+                            <div id="teachSkillsList" class="skills-list">
+                                <div class="skill-item">
+                                    <span class="skill-name">🎤 Singing</span>
+                                    <span class="skill-level">Advanced</span>
+                                    <button class="btn-remove">✕</button>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">💻 Web Development</span>
+                                    <span class="skill-level">Intermediate</span>
+                                    <button class="btn-remove">✕</button>
+                                </div>
+                            </div>
+                            <form id="addTeachSkillForm" class="skill-form" style="display: none;">
+                                <input type="text" id="teachSkillName" placeholder="Skill name" required>
+                                <select id="teachSkillLevel">
+                                    <option value="Beginner">Beginner</option>
+                                    <option value="Intermediate">Intermediate</option>
+                                    <option value="Advanced">Advanced</option>
+                                </select>
+                                <div class="form-actions">
+                                    <button type="submit" class="btn-primary">Add</button>
+                                    <button type="button" class="btn-secondary" id="cancelTeachSkillBtn">Cancel</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="profile-card">
+                        <div class="card-header">
+                            <h2>Skills I Want to Learn</h2>
+                            <button class="btn-icon" id="addLearnSkillBtn">➕</button>
+                        </div>
+                        <div class="card-content">
+                            <div id="learnSkillsList" class="skills-list">
+                                <div class="skill-item">
+                                    <span class="skill-name">🎸 Guitar</span>
+                                    <span class="skill-interest">Very Interested</span>
+                                    <button class="btn-remove">✕</button>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">🎨 Digital Art</span>
+                                    <span class="skill-interest">Interested</span>
+                                    <button class="btn-remove">✕</button>
+                                </div>
+                            </div>
+                            <form id="addLearnSkillForm" class="skill-form" style="display: none;">
+                                <input type="text" id="learnSkillName" placeholder="Skill name" required>
+                                <select id="learnSkillInterest">
+                                    <option value="Interested">Interested</option>
+                                    <option value="Very Interested">Very Interested</option>
+                                    <option value="Urgent">Urgent</option>
+                                </select>
+                                <div class="form-actions">
+                                    <button type="submit" class="btn-primary">Add</button>
+                                    <button type="button" class="btn-secondary" id="cancelLearnSkillBtn">Cancel</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile-sidebar">
+                    <div class="profile-card">
+                        <h3>Profile Completion</h3>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="profileProgress" style="width: 75%"></div>
+                        </div>
+                        <p class="progress-text">75% Complete</p>
+                        <ul class="completion-checklist">
+                            <li class="completed">✓ Profile created</li>
+                            <li class="completed">✓ Skills added</li>
+                            <li class="completed">✓ About section filled</li>
+                            <li>Add profile picture</li>
+                        </ul>
+                    </div>
+
+                    <div class="profile-card">
+                        <h3>Stats</h3>
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <div class="stat-value">5</div>
+                                <div class="stat-label">Matches</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">12</div>
+                                <div class="stat-label">Messages</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">3</div>
+                                <div class="stat-label">Active Exchanges</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 Skillloop. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
